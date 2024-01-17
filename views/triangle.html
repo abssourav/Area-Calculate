@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Calculate</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        h1{
+            margin: 0 auto;
+        }
+        nav{
+            background-color: black;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            
+        }
+        li{
+            list-style-type: none;
+            margin: 1rem 0;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        main{
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/circle">Circle</a></li>
+                <li><a href="/triangle">Triangle</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Triangle Calculate</h1>
+        <form action="triangle" method="POST">
+            <div>
+                <label for="base">Enter Base: </label>
+                <input type="text" id="base" name="base">
+            </div>
+            <div>
+                <label for="height">Enter Height: </label>
+                <input type="text" id="height" name="height">
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+    </main>
+</body>
+</html>
